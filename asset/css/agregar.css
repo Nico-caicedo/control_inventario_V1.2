@@ -1,0 +1,538 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: vh;
+  display: flex;
+  gap: 25px;
+  flex-direction: column;
+  background-color: white;
+  position: relative;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/* parte del header y nav */
+
+h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.nameLogo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.container_boton {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+
+  background-color: whitesmoke;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.356);
+}
+
+.burger {
+  width: 40px;
+}
+
+.menu {
+  display: none;
+}
+
+/* main  */
+
+.boton_change {
+  height: 60px;
+  width: 150px;
+  font-size: 22px;
+  background-color: rgba(0, 0, 0, 0.247);
+  color: black;
+  transition: 0.5s;
+  border: none;
+}
+
+.boton_change::selection {
+  background-color: rgba(0, 0, 0, 0.247);
+}
+
+#seccion-1 {
+  display: block;
+}
+
+#seccion-2 {
+  display: none;
+  height: auto;
+  width: 100%;
+}
+
+main {
+  width: 100%;
+}
+.boton_change{
+  cursor: pointer;
+}
+
+.boton_change:hover{
+  background-color: #4444449d;
+}
+
+main header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 25px;
+}
+
+/* seccion 1- CRUD para elementos en los ambientes */
+
+.show_opc{
+  margin-top: 25px;
+}
+
+.opc{
+  display: flex;
+  justify-content: center;
+}
+.opc select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.forms{
+  width: 100%;
+  
+  display: flex;
+  text-transform: capitalize;
+  align-items: center;
+  justify-content: center;
+}
+
+.forms h2{
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#selectOpciones {
+ 
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  display: inline-block;
+  width: 80%;
+  cursor: pointer;
+  padding: 7px 10px;
+  height: 42px;
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  background: #f0f0f0;
+  color: #7b7b7b;
+  font-size: 1em;
+  color: #000000;
+  font-family: "Quicksand", sans-serif;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  position: relative;
+  transition: all 0.25s ease;
+}
+
+
+
+/* Eliminamos la fecha que por defecto aparece en el desplegable */
+.opc select::-ms-expand {
+    display: none;
+}
+
+
+/* modificacione generles a formularios */
+
+
+.formularios{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ gap: 10px;
+}
+
+.formularios input{
+  width: 250px;
+  height: 30px;
+  font-size: 20px;
+}
+
+
+.formularios select{
+  width: 200px;
+  height: 40px;
+}
+
+.formularios input[type="submit"]{
+  background-color: rgba(4, 192, 4, 0.849);
+  border: none;
+  border-radius: 5px ;
+  height: 40px;
+}
+
+
+
+
+/* ------------------------------------------ */
+
+
+
+.opc:hover i{
+	margin-top: 3px;
+}
+/* seccion 2 - Sistema CRUD para ambientes */
+
+
+.add_aula {
+  width: 100%;
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+
+
+.form {
+  border: solid 1px rgb(201, 193, 193);
+  width: 80%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+}
+
+.form_header {
+  background-color: rgba(60, 169, 241, 0.685);
+  height: 40px;
+  width: 100%;
+  color: rgba(0, 0, 0, 0.904);
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-input input {
+  height: 50px;
+
+  font-size: 18px;
+  padding-left: 15px;
+  border: none;
+  background-color: rgb(221, 221, 221);
+  margin-top: 15px;
+}
+
+.boton {
+  height: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 238px;
+  margin-bottom: 15px;
+  font-size: 15px;
+  text-transform: uppercase;
+  border: none;
+  background-color: rgb(5, 6, 19);
+  color: white;
+  font-weight: bold;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.boton:hover {
+  background-color: rgba(0, 0, 0, 0.247);
+  color: black;
+  transition: 0.5s;
+}
+
+.list-aula {
+  width: 92%;
+  height: 300px;
+  margin: 15px;
+
+  overflow-y: scroll;
+}
+
+table {
+  width: 50%;
+
+  text-align: center;
+  text-transform: capitalize;
+  line-height: 1.5;
+}
+
+table th {
+  background-color: #ffffff;
+  height: 25px;
+  margin-right: 55px;
+  font-size: 5px;
+}
+
+table tbody tr:nth-child(odd) {
+  background: #fff5e0;
+}
+table tbody tr:nth-child(even) {
+  background: #e6d5b6;
+}
+table th {
+  background: #444;
+  color: #fff;
+  font-size: 22px;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.body_table td {
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+}
+td {
+  height: 50px;
+  margin-top: 5px;
+}
+
+.escoder {
+  display: none;
+}
+
+.agregado {
+  background-color: rgb(106, 175, 106);
+  color: black;
+}
+ 
+.edit {
+  height: 20px;
+  width: 20px;
+  padding: 25px;
+  margin-top: 5px;
+  background-color: rgba(4, 112, 253, 0.897);
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.603);
+  border-radius: 5px;
+}
+
+.edit:hover {
+  background-color: rgba(4, 120, 253, 0.493);
+}
+
+.delet {
+  height: 20px;
+  width: 20px;
+  padding: 25px;
+  margin-top: 5px;
+  background-color: rgba(253, 4, 4, 0.897);
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.603);
+  border-radius: 5px;
+}
+
+.delet:hover {
+  background-color: rgba(255, 0, 0, 0.623);
+}
+i {
+  width: 30px;
+}
+
+@media only screen and (min-width: 427px) {
+  body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: white;
+    position: relative;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+
+  /* parte del header y nav */
+
+  h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+  }
+
+  .nameLogo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .container_boton {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+
+    background-color: whitesmoke;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.356);
+  }
+
+  .burger {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+  }
+
+  .menu li {
+    list-style: none;
+  }
+
+  .menu li a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+
+    position: relative;
+    height: 50px;
+    width: 150px;
+  }
+
+  .menu a:hover:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    top: 40px;
+    width: 150px;
+    height: 5px;
+    background-color: rgb(7, 187, 7);
+  }
+
+
+  main{
+    display: flex;
+  }
+
+  main header{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  main main{
+    padding-top: 45px;
+    width: 70%;
+   
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .formularios{
+    width: 100%;
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center q2;
+  
+  }
+
+  .columns{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  gap: 15px;
+  }
+
+  #contenidoOpcion1{
+    overflow-y: scroll;
+    height: 400px;
+    width: 600px;
+  }
+
+  #contenidoOpcion2{
+    overflow-y: scroll;
+    height: 400px;
+    width: 600px;
+  }
+  #seccion-2{
+   
+    justify-content: center;
+    overflow-y: scroll ;
+    height: 300px;
+    width: 100%;
+  }
+
+  
+
+  .add_aula {
+    width: 95%;
+    
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    align-items: none;
+    }
+  .form_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+  }
+  
+  #form_m{
+    display: flex;
+    align-items: flex-start;
+  }
+  
+
+}

@@ -1,0 +1,519 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: white;
+    position: relative;
+}
+
+#big {
+    display: none;
+    transition: .5s;
+    letter-spacing: 0.5px;
+}
+
+.container_boton {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #343a40;
+    color: whitesmoke;
+}
+
+
+
+
+
+.burger {
+    width: 40px;
+}
+
+main {
+    margin: 10px;
+    height: 100%;
+
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text {
+    text-align: justify;
+    font-size: 22px;
+}
+
+.inventario_img {
+    width: 200px;
+}
+
+footer {
+    margin: 35px 15px 0 15px;
+    display: flex;
+    justify-content: center;
+
+}
+
+footer p {
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+#menu {
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    font-size: 20px;
+
+}
+
+.select {
+    position: relative;
+}
+
+.select::after {
+    content: "";
+        background-color: yellow;
+        position: absolute;
+        left: 0px;
+        top: 25px;
+        width: 85px;
+        height: 4px;
+        border-radius: 5px;
+
+}
+
+#menu {
+    display: none;
+}
+
+#menu li {
+    margin-left: 15px;
+    list-style: none;
+}
+
+#menu li a {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+
+
+
+.title_form {
+    background-color: rgba(0, 128, 0, 0.719);
+    height: 45px;
+    width: 100%;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+
+.container-top{
+    width: 100%;
+
+    display: flex;
+
+}
+
+.form_container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    width: 50%;
+    height: 400px;
+    gap: 15px;
+    background-color: white;
+    border: solid rgba(0, 0, 0, 0.274) 1px;
+}
+
+.form_container .container_ubi{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    gap: 5px;
+    height: 100%;
+}
+
+.column1, .column2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    height: 80%;
+}
+
+.crear_a{
+    width: 250px;
+    height: 40px;
+    border: rgba(0, 0, 0, 0.438) solid 1px;
+    border-radius: 5px;
+    background-color: rgba(4, 128, 0, 0.541);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    transition: .5s;
+
+}
+
+.crear_a:hover{
+    background-color: rgba(0, 128, 0, 0.856);
+    transition: .5s;
+}
+
+input {
+    background-color: #343a402f;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+}
+
+div select {
+    width: 200px;
+    height: 28px;
+    border: solid rgba(0, 0, 0, 0.274) 1px;
+}
+
+.boton_enviar {
+    background-color: rgba(0, 174, 255, 0.452);
+    margin-bottom: 15px;
+    height: 40px;
+}
+
+
+
+
+.list-aula {
+    width: 50%;
+    padding-top: 25px;
+    margin: 15px;
+    height: 360px;
+    overflow-y: scroll;
+}
+
+
+table {
+
+
+    text-align: center;
+    text-transform: capitalize;
+    line-height: 1.5;
+}
+
+
+table th {
+    background-color: #ffffff;
+    height: 25px;
+
+}
+
+table tbody tr:nth-child(odd) {
+    background: #fff5e0;
+}
+
+table tbody tr:nth-child(even) {
+    background: #e6d5b6;
+
+}
+
+table th {
+    background: #444;
+    color: #fff;
+    font-size: 22px;
+    
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.body_table td {
+    margin: 5px;
+    font-size: 19px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+td {
+    height: 50px;
+    margin-top: 5px;
+}
+
+
+.escoder {
+    display: none;
+}
+
+
+
+.agregado {
+    background-color: rgb(106, 175, 106);
+    color: black;
+}
+
+
+
+.edit {
+    height: 20px;
+    width: 20px;
+    padding: 25px;
+    margin-top: 5px;
+    background-color: rgba(4, 112, 253, 0.897);
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.603);
+    border-radius: 5px;
+}
+
+
+
+.edit:hover {
+    background-color: rgba(4, 120, 253, 0.493);
+
+}
+
+.delet {
+    height: 20px;
+    width: 20px;
+    padding: 25px;
+    margin-top: 5px;
+    background-color: rgba(253, 4, 4, 0.897);
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.603);
+    border-radius: 5px;
+
+}
+
+.delet:hover {
+
+    background-color: rgba(255, 0, 0, 0.623);
+}
+
+i {
+    width: 30px;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+    body {
+        background-color: white
+    }
+
+    #big {
+        display: unset;
+        transition: .5s;
+        text-transform: capitalize;
+        font-size: 25px;
+    }
+
+    #small {
+        display: none;
+        transition: .5s;
+    }
+
+    #menu {
+        display: unset;
+        position: unset;
+        background-color: unset;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    .text {
+        width: 60%;
+    }
+
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 490px;
+    }
+
+}
+
+
+.modal-button2{
+width: 80%;
+height: 35px;
+border: 1px solid rgba(0, 0, 0, 0.363);
+border-radius: 5px;
+transition: .5s;
+background-color: rgba(255, 251, 0, 0.534);
+font-size: 18px;
+font-weight: bold;
+}
+
+.modal-button2:hover{
+    background-color: rgba(255, 251, 0, 0.89);
+    transition: .5s;
+}
+
+.modal2 {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content2 {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 400px;
+    width: 400px;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    max-width: 600px;
+
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.modal-content2  form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+   
+}
+
+
+.modal-content2 h1{
+    height: 50px;
+    text-align: center;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.527);
+}
+
+
+.modal-content2 form div{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    
+}
+
+.close{
+    margin: 15px;
+    width: 100%;
+    display: flex;
+   justify-content: center;
+}
+
+.close-button2 {
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    font-weight: bold;
+    top: 6px;
+    right: 10px;
+    border: solid 1px rgba(255, 0, 0, 0.767);
+    border-radius: 15px;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 0, 0, 0.384);
+    cursor: pointer;
+    transition: .5s;
+}
+
+.close-button2:hover{
+    background-color: rgba(255, 0, 0, 0.774);
+    transition: .5s;
+
+}
+
+
+/* Estilos para la ventana modal */
+.modal {
+    display: none;
+    /* Oculta la ventana modal por defecto */
+    position: fixed;
+    /* Posición fija para que esté siempre visible */
+    z-index: 1;
+    /* Posición por encima de otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    /* Permite desplazamiento si el contenido es demasiado grande */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Fondo oscuro semitransparente */
+}
+
+.modal-contenido {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* Margen superior e inferior y centrado horizontalmente */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* Estilos para el botón de cerrar */
+.cerrar {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.cerrar:hover,
+.cerrar:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}

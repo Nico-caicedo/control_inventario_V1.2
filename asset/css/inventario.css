@@ -1,0 +1,512 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 92vh;
+  display: flex;
+  gap: 25px;
+  flex-direction: column;
+  background-color: white;
+  position: relative;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/* parte del header y nav */
+
+h1 {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.nameLogo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+}
+
+.container_boton {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+
+  background-color: whitesmoke;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.356);
+}
+
+.burger {
+  width: 40px;
+}
+
+.menu {
+  display: none;
+}
+
+/* sección de main */
+
+.main{
+  display: flex;
+  flex-direction: column;
+  margin: 0px 15px 0 15px;
+  gap: 55px;
+}
+
+.choose {
+  background-color: rgb(221, 221, 221);
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choose article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.one {
+  display: none;
+}
+
+.first {
+  background-color: rgba(0, 132, 255, 0.582);
+  font-size: 20px;
+  width: 250px;
+  height: 42px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.down {
+  width: 25px;
+}
+
+.show header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: cornsilk;
+  font-size: 30px;
+  height: 100px;
+  border-radius: 5px 5px 0 0;
+  border: 1px solid rgba(0, 0, 0, 0.26);
+}
+.show header div {
+  display: flex;
+  align-content: space-between;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 40px;
+}
+
+.divisor {
+  box-sizing: border-box;
+  border-right: 1px solid rgba(0, 0, 0, 0.596);
+  height: 100%;
+  margin-top: -10px;
+}
+
+.divisor2 {
+  background-color: rgba(0, 0, 0, 0.438);
+  width: 100%;
+  height: 2px;
+  margin-top: -2px;
+}
+
+/* .show main {
+  width: 100%;
+  height: 70%;
+  border: 1px solid black;
+  background-color: rgb(216, 216, 216);
+  margin: unset;
+
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding-top: 5px;
+    
+}
+
+.show main div {
+  font-size: 25px;
+  background-color: rgb(172, 172, 172);
+  width: 80%;
+  height: 40px;
+  border-radius: 8px;
+  margin: unset;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px; */
+/* } */
+/* 
+.contenedor {
+  background-color: #f0f0f0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.contenido {
+  display: none;
+  margin-top: 10px;
+}
+
+.activo {
+  display: block;
+}
+*/
+.show img {
+  width: 30px;
+  gap: 1px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+footer p {
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+
+@media only screen and (max-width: 320px) {
+  .show header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: cornsilk;
+    font-size: 25px;
+    height: 100px;
+    border-radius: 5px 5px 0 0;
+    border: 1px solid rgba(0, 0, 0, 0.26);
+  }
+}
+
+@media only screen and (min-width: 427px) {
+  body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: white;
+    position: relative;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+
+  /* parte del header y nav */
+
+  h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+  }
+
+  .nameLogo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .container_boton {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+
+    background-color: whitesmoke;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.356);
+  }
+
+  .burger {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+  }
+
+  .menu li {
+    list-style: none;
+  }
+
+  .menu li a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+
+    position: relative;
+    height: 50px;
+    width: 150px;
+  }
+
+  .menu a:hover:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    top: 40px;
+    width: 150px;
+    height: 5px;
+}
+  
+
+  /* sección de main */
+
+ .main {
+    display: flex;
+    flex-direction: row;
+    height: 600px;
+    margin: 10px 15px 0 15px;
+    gap: 25px;
+  }
+
+  .choose {
+    background-color: white;
+    height: 350px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+  }
+
+  .choose article {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5px;
+    margin-top: 150px;
+  }
+
+  .choose article div {
+    background-color: rgba(0, 132, 255, 0.582);
+    font-size: 20px;
+    width: 280px;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.9s;
+    cursor: pointer;
+  }
+
+  .choose article div:hover {
+    background-color: rgb(0, 132, 255);
+    transition: 0.9s;
+  }
+
+  .down {
+    display: none;
+    width: 25px;
+  }
+
+  .show {
+    width: 70%;
+  }
+
+  .show header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: cornsilk;
+    font-size: 30px;
+    height: 20%;
+    border-radius: 5px 5px 0 0;
+    border: 1px solid rgba(0, 0, 0, 0.26);
+  }
+  .show header div {
+    display: flex;
+    align-content: space-between;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 40px;
+  }
+
+  .divisor {
+    box-sizing: border-box;
+    border-right: 1px solid rgba(0, 0, 0, 0.596);
+    height: 100%;
+    margin-top: -10px;
+  }
+
+  .divisor2 {
+    background-color: rgba(0, 0, 0, 0.438);
+    width: 100%;
+    height: 2px;
+    margin-top: -2px;
+  }
+
+  .section_opc{
+    width: 100%;
+    height: 50%;
+
+    border: 1px solid black;
+    background-color: rgb(216, 216, 216);
+    margin: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .containers_opc{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    overflow-y: scroll;
+    gap: 15px;
+    font-size: 25px;
+  }
+
+  .section_op{
+    font-size: 35px;
+    background-color: rgb(172, 172, 172);
+    width: 90%;
+    border-radius: 8px;
+    margin: unset;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .show img {
+    width: 30px;
+    gap: 1px;
+  }
+
+  .contenedor {
+    background-color: #f0f0f0;
+    padding: 10px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .contenido {
+    display: none;
+    margin-top: 10px;
+  }
+
+  .perfil{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+  }
+  
+  .foto_perfil{
+    width: 40px;
+    border-radius: 5px;
+
+
+  }
+
+   /* Estilos para el contenedor y las opciones flotantes */
+   #contenedor {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f0f0f0;
+    position: relative;
+  }
+
+  #opciones {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  #contenedor:hover #opciones {
+    display: block;
+  }
+
+  /* Estilos para la ventana modal */
+  #modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+
+  #opciones{
+    width: 200px;
+  }
+
+  #modal-content {
+    background-color: white;
+    padding: 20px;
+    width: 100px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .cerrar{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+    width: 200px;
+  }
+
+  .name_perfil{
+    text-transform: capitalize;
+  }
+  
+  /* .cerrar:hover{
+    background-color: rgba(43, 43, 43, 0.227);
+  } */
+}
